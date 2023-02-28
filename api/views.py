@@ -15,16 +15,6 @@ def getEvent(request):
     return Response(serializer.data)
 
 
-""""
-@api_view(['GET'])
-def getSingleEvent(request, pk):
-    sEvent = Event.objects.get(id=pk)
-    serializer = EventSerializers(sEvent, many=False)
-    return Response(serializer.data)
-
-    """
-
-
 @api_view(['POST'])
 def addEvent(request):
     serializer = EventSerializers(data=request.data)
@@ -43,10 +33,8 @@ def updateEvent(request, pk):
         serializer.save()
         return Response(serializer.data)
 
-    # to be continued
 
-
-@api_view(['DELETE', 'GET', 'OPTIONS'])
+@api_view(['DELETE', 'GET'])
 def deleteEvent(request, pk):
     item = get_object_or_404(Event, pk=pk)
     item.delete()

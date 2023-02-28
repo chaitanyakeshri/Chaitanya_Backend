@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-lg  bg-dark shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">IITB </a>
+        <a class="navbar-brand" href="/">IIT BOMBAY EVENTS PORTAL  (DEMO BACKEND)  </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,53 +31,63 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="admin">Admin</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
+            
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Events
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/add">Add Event</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="/update">Update Event</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/delete">Delete Event</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="/get">View Events</a></li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="add">Add Event</a
+                >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="get">View Events</a >
+
                 
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services"></a>
-            </li>
+                <li class="nav-item dropdown">
+
+
+              
+              <li class="nav-item dropdown">
+
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Delete Event
+                  </a>
+          
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="delete/1">Event 1</a></li>
+                      <li><a class="dropdown-item" href="delete/2">Event 2</a></li>
+                      <li><a class="dropdown-item" href="delete/3">Event 3</a></li>
+                  </ul>
+              </div>
+                
+                <li class="nav-item dropdown">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"">|</a >
+
+                  
+                  <li class="nav-item dropdown">
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Update Event
+                      </a>
+              
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="update/1">Event 1</a></li>
+                          <li><a class="dropdown-item" href="update/2">Event 2</a></li>
+                          <li><a class="dropdown-item" href="update/3">Event 3</a></li>
+                      </ul>
+                  </div>
+          
+           
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+         
         </div>
       </div>
     </nav>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <strong>CheckOut The Latest Events Up !!!!</strong> . Welcome to IITB      .
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% block body %}{% endblock body %}
@@ -86,5 +96,12 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <footer class="blog-footer" center>
+      <p>Blog template built for <a href="https://devcom-iitb.org/">DevCom</a> by <a href="#">@Chaitanya </a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer
   </body>
 </html>
